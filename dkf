@@ -1,0 +1,21 @@
+* f4ede28 (HEAD, master) impl interator, all/anymatch
+* 78f3523 fixed javadoc
+* 4f7a19d impl interator, all/anymatch
+* 7dd8400 working map added
+* ac5443d working filter added
+* d11f487 added max min
+* 2747745 added copy const
+* eb4d8be added reverse
+* 4cb6cc0 added reverse
+* 38ca7de added add GenList to index
+* 6b97929 added add GenList
+* 28d164a added makestring with start/sep/end
+* df6f5a7 added toArray
+* 1d877c3 added most methods that could be directly ported over
+* 98bf191 added most methods that could be directly ported over
+* a19abff added generic type fixing errors
+* 5164797 fixed compilation by adding imports
+* 1d1579d added skeleton code
+| * f03f97f (origin/master, origin/HEAD) Update README.md
+|/  
+* 05d38ce Update README.md

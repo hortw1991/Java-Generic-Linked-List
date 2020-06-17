@@ -1,0 +1,46 @@
+cs1302-genlistadt:
+total 56
+drwxr-xr-x 3 ugrad  4096 Oct 18 08:44 bin
+-rwxr--rwx 1 ugrad    98 Oct  9 17:40 compile.sh
+-rw-r--r-- 1 ugrad   747 Oct 17 20:18 dkf
+-rw-r--r-- 1 ugrad  7415 Oct  7 13:03 driver-1.1.jar
+drwxr-xr-x 2 ugrad  4096 Oct  7 13:00 lib
+-rw-r--r-- 1 ugrad 25870 Oct  7 12:54 README.md
+-rw-r--r-- 1 ugrad     0 Oct 18 13:50 rec26006
+drwxr-xr-x 3 ugrad  4096 Oct  7 13:00 src
+
+cs1302-genlistadt/bin:
+total 4
+drwxr-xr-x 3 ugrad 4096 Oct 18 08:44 cs1302
+
+cs1302-genlistadt/bin/cs1302:
+total 4
+drwxr-xr-x 2 ugrad 4096 Oct 18 08:44 genlist
+
+cs1302-genlistadt/bin/cs1302/genlist:
+total 32
+-rw-r--r-- 1 ugrad 1401 Oct 18 08:44 Container.class
+-rw-r--r-- 1 ugrad  987 Oct 18 08:44 GenListIterator.class
+-rw-r--r-- 1 ugrad 8619 Oct 18 08:44 LinkedGenList.class
+-rw-r--r-- 1 ugrad 8255 Oct 18 08:44 LinkedGenListTest.class
+
+cs1302-genlistadt/lib:
+total 4
+-rw-r--r-- 1 ugrad 1671 Oct  7 12:54 genlistadt.jar
+
+cs1302-genlistadt/src:
+total 4
+drwxr-xr-x 3 ugrad 4096 Oct  7 13:00 cs1302
+
+cs1302-genlistadt/src/cs1302:
+total 4
+drwxr-xr-x 2 ugrad 4096 Oct 17 23:51 genlist
+
+cs1302-genlistadt/src/cs1302/genlist:
+total 40
+-rw-r--r-- 1 ugrad  2630 Oct 17 23:51 Container.java
+-rw-r--r-- 1 ugrad  3459 Oct 15 14:25 Driver.txt
+-rw-r--r-- 1 ugrad  1104 Oct 15 14:11 GenListIterator.java
+-rw-r--r-- 1 ugrad 13327 Oct 17 23:56 LinkedGenList.java
+-rw-r--r-- 1 ugrad  8291 Oct 18 00:02 LinkedGenListTest.java
+/home/ugrads/horn/cs1302-genlistadt:/home/work/cs1302a

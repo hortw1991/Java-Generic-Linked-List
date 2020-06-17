@@ -1,0 +1,106 @@
+package cs1302.genlist;
+
+import cs1302.genlist.LinkedGenList;
+import cs1302.genlist.Container;
+import java.util.function.IntFunction;
+import java.util.Comparator;
+import java.util.function.Predicate;
+import java.util.Iterator;
+import cs1302.genlist.GenListIterator;
+import java.util.function.Function;
+import java.util.function.BinaryOperator;
+import cs1302.genlistadt.GenList;
+
+
+public class Driver {
+    
+    public static void main(String... args) {
+        
+        LinkedGenList<String> one = new LinkedGenList<String>();
+        one.add("one"); one.add("alpha"); one.add("zeta");
+        LinkedGenList<String> two = new LinkedGenList<String>();
+        LinkedGenList<String> three = new LinkedGenList<String>();
+        LinkedGenList<String> four = new LinkedGenList<String>();
+
+        LinkedGenList<Integer> i = new LinkedGenList<>();
+        i.add(1);i.add(2);i.add(3);
+
+        LinkedGenList<Integer> ii = new LinkedGenList<>();
+        ii.add(0);ii.add(0);ii.add(0);
+        
+        i.add(ii);
+        LinkedGenList<Integer> iii = new LinkedGenList<>(i);
+
+        //IntFunction<Integer[]> gen = Integer[]::new;
+        //Integer[] n = i.toArray(gen);
+    
+        /** Min and Max */
+        /*
+        Comparator<Integer> cmp = Integer::compareTo;
+        System.out.println(i.min(cmp));
+        System.out.println(i.max(cmp.reversed()));
+        System.out.println(i.max(cmp));
+        System.out.println(i.min(cmp.reversed()));
+        Comparator<String> st = (a, b) -> a.compareTo(b);
+        System.out.println(one.max(st));
+        System.out.println(one.min(st.reversed()));
+        */
+
+        /** Filter */
+        /*
+        GenList<Integer> fil = new LinkedGenList<>();
+        fil.add(3); fil.add(4); fil.add(1); fil.add(2);
+
+        Predicate<Integer> evenOnly = n -> n % 2 == 0;
+        GenList<Integer> evens = fil.filter(evenOnly);
+        System.out.println(evens.makeString(", "));
+        */ 
+        
+        /** Map */
+        /*        
+        GenList<Integer> mp = new LinkedGenList<>();
+        mp.add(3); mp.add(1); mp.add(2);
+        
+        Function<Integer, String> binMap = n -> n.toString(n, 2);
+        GenList<String> binary = mp.map(binMap);System.out.println(binary.makeString(", "));
+        System.out.println(binary.makeString(", "));
+        */
+
+        /** Iterator */
+        /*
+        GenList<Integer> it = new LinkedGenList<>();
+        it.add(3); it.add(1); it.add(2);
+        Iterator<Integer> its = it.iterator();
+        System.out.println(its.next());
+        for (Integer e : it) {
+            System.out.println(e);
+        }
+        */
+
+        /** Any/All Match */
+        /*
+        GenList<Integer> odds = new LinkedGenList<Integer>();
+        odds.add(3); odds.add(5); odds.add(111);
+
+        GenList<Integer> notOdds = new LinkedGenList<Integer>();
+        notOdds.add(3); notOdds.add(6); notOdds.add(111);
+        Predicate<Integer> oddTest = n -> {
+            return n % 2 != 0;
+        };
+        if (notOdds.allMatch(oddTest))             System.out.println("passed");
+            System.out.println("passed");
+        }
+        */ 
+
+        /** Reduce */
+
+        GenList<Integer> red = new LinkedGenList<Integer>();
+        red.add(3); red.add(2); red.add(1);
+        BinaryOperator<Integer> intSum = (x, y) -> x + y;
+        System.out.println(red.reduce(0, intSum));
+        System.out.println(red.reduce(10, intSum));
+        System.out.println(red.reduce(-6, intSum));
+
+    }
+
+}
